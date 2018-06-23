@@ -1,232 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-    <title>ABC Toys</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
 
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Acelia's Site</title>
+		<meta name="author" content="aceli" />
+		<link rel="stylesheet" href="new_file.css">
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rubik:900" rel="stylesheet">>
+		<!-- Date: 2018-05-01 -->
+	</head>
+	<body>
+		<div class ="container">
+			<!--------------------welcome---------------->
+			<div id = "acelia"> 
+				<h1>Hi, I'm Acelia</h1>
+				<img src="self.jpg"  alt="ac" width="250" height="250" align="right">
+				<p>I'm a full time CS major taking courses from JS/jQuery to Data Structures. 
+					Part time, I’m an instructor at The Coder School. Currently, as a Code Coach, I’m responsible for creating 
+					and assigning material for each student depending on their experience level, age and programming language preference. 
+					You can see the final projects in the, ‘The Coder School’ repository. I’m currently taking classes in Javascript/ jQuery, 
+					Mobile Web App Dev and LINUX/UNIX machines, check my repository for this semesters projects in their respective repository. 
+					I’m currently in a position to gain experience through projects and/or help desk IT service positions. 
+					I work great with a team when there is a common goal and I’m a self-starter for tasks assigned for myself. 
+					My passions include educating and motivating others to pursue IT, programming and engineering fields as an ambassador 
+					for TECHNOLOchicas and member of the Society of Hispanic Engineers</p>
+		
+			</div>
+			<!--------------------welcome--------------->
+			
+			
+			<!--------------------about me div---------------->
+			<div class = "aboutMe"> 
+				<h3>ABOUT ME</h3>
+				  <div class="column"><h1>Story</h1>
+				  	I used my first piece of software application at 12 years old while Photo and video editing a group of kids 
+				  	at a time that would host events and have weekly discussions. I would regularly create the flyers, posters and 
+				  	commercials for upcoming events and discussion. During this time myspace came about and there was so much more 
+				  	for me to create and customize, I had found a new after school activity...<a href="about.html" style="color:white;">Read More</a>
+				  </div>
+				  
+				  <div class="column"><h1>Info</h1><strong>Name</strong>: Acelia <em>('uh sel ee uh')</em> or 'Cel' (like a cell phone)<br><br> 
+				  	<strong>Current Job Title:</strong> Code Coach at The Coder School<br><br> 
+				  	<strong>Website:</strong> wwww.enganeda.com <br><br> 
+				  	<strong>Current Location:</strong> San Francisco, Bay Area<br><br> 
+				  	<a href="newResume2018P.pdf" target="_blank" class="button"><strong>Download my resume</strong></a>
+					</div>
+				  
+				  <div class="column"><h1>Skills</h1>Python<br><br> Mobile Web App Dev<br><br> JavaScript/ JQuery<br><br> Java<br><br></div>
+				  
+				  <div class="column"><h1>Contact</h1>
+				  	<strong>Email:</strong> acelia.castaneda@gmail.com<br><br> 
+				  	<a href="https://github.com/CeliCel"  target="_blank" >
+					<img src="github icon.svg" alt="github" width="45" height="45" border="0"></a>
+					
+					<a href="https://www.facebook.com/acelia.castaneda/">
+					<img src="facebook icon.png" alt="facebook" width="50" height="50" border="0"></a>
+					
+				  	<a href="https://www.linkedin.com/in/acelia-castaneda-76922b91/">
+					<img src="linkedin icon.png" alt="linkedin" width="50" height="50" border="0"></a>
+	
+				  </div>
+				
+			</div>
+			<!--------------------about me div---------------->	
+			
+			
+			<!--------------------blog posts---------------->
+			<div class = "blog"> 
+				<h3>BLOG</h3>
+			        <div class="item item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+			        <div class="item item2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+			        <div class="item item3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
+			        
+			</div>
+			<!--------------------blog posts ---------------->	
+		</div><!--end container -->
 
-    <style>
-  
-    #home:after { background:  url("home icon.jpg") 50% 50% no-repeat; background-size: 20px 20px; }
-    #home2:after { background:  url("home icon.jpg") 50% 50% no-repeat; background-size: 20px 20px; }
-    #home3:after { background:  url("home icon.jpg") 50% 50% no-repeat; background-size: 20px 20px; }
-    #home4:after { background:  url("home icon.jpg") 50% 50% no-repeat; background-size: 20px 20px; }
-    
-    #toys:after { background:  url("shop icon.png") 50% 50% no-repeat; background-size: 20px 20px;  }
-    #toys2:after { background:  url("shop icon.png") 50% 50% no-repeat; background-size: 20px 20px;  }
-    #toys3:after { background:  url("shop icon.png") 50% 50% no-repeat; background-size: 20px 20px;  }
-    #toys4:after { background:  url("shop icon.png") 50% 50% no-repeat; background-size: 20px 20px;  }
-    
-    #location:after { background:  url("location icon.png") 50% 50% no-repeat;  background-size: 20px 20px; }
-    #location2:after { background:  url("location icon.png") 50% 50% no-repeat;  background-size: 20px 20px; }
-    #location3:after { background:  url("location icon.png") 50% 50% no-repeat;  background-size: 20px 20px; }
-    #location4:after { background:  url("location icon.png") 50% 50% no-repeat;  background-size: 20px 20px; }
-    
-    #contact:after { background:  url("email icon.jpg") 50% 50% no-repeat;  background-size: 20px 20px; }
-    #contact2:after { background:  url("email icon.jpg") 50% 50% no-repeat;  background-size: 20px 20px; }
-    #contact3:after { background:  url("email icon.jpg") 50% 50% no-repeat;  background-size: 20px 20px; }
-    #contact4:after { background:  url("email icon.jpg") 50% 50% no-repeat;  background-size: 20px 20px; }
-    
-    img { max-width: 100%; height: auto;
-    }
-    
-    </style>
-</head>
-<body>
-    <!-- This is the home page -->
-    <section id="homepage" data-role="page">
-        <header data-role="footer" data-position="fixed">
-        <h2>Home</h2>
-        </header>
-        <div data-role="content">
-
-        <h3>Making learning fun</h3>
-
-        <p>ABC Toys is a company that opened its doors in 2001 and it has kept its mission for all those years.</p>
-        <p>The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills making learning a fun task.</p>
-        <p>By the way, parents love our toys too</p>
-
-        </div>
-
-
-        <div data-role="header" data-position="fixed">
-
-        <div data-role="navbar" data-grid="c">
-        <ul>
-            <li><a href="#homepage" id="home" data-transition="none" class="ui-btn-active ui-state-persist" data-icon="custom"></a></li>
-            <li><a href="#toysPage" id="toys" data-transition="none" data-icon="custom"></a></li>
-            <li><a href="#locationPage" id="location" data-transition="none" data-icon="custom"></a></li>
-            <li><a href="#contactPage" id="contact" data-transition="none" data-icon="custom"></a></li>
-
-        </ul>        	
-        </div>
-
-    </div>
-  
-
-    </section>
-
-    <!-- This is the products page -->
-    <div id="toysPage" data-role="page">
-        <header data-role="footer" data-position="fixed">
-        <h2>Products</h2>
-        </header>
-        <div data-role="content">
-
-          <div data-role="collapsible" id="ourtoys">
-            <h2>Our Toys</h2>
-
-          <div data-role="collapsible" data-theme="b" id="aWheels" data-collapsed-icon="info">
-            <h3>Wooden animals w/ wheels</h3>
-            <img src="toy1.jpg" alt="animals with wheels">
-            <p>Cars are fun but why not learn about animals while creating a fun race amongst animals</p>
-          </div>
-
-          <div data-role="collapsible" data-theme="b" id="wStacks" data-collapsed-icon="info">
-            <h3>Stackable Wood Blocks</h3>
-            <img src="toy2.png" height="500" width="500" alt="stackable wood blocks">
-            <p>Create a star, a teepee or any geometric shapes with these blocks.</p>
-          </div>
-
-
-            <div data-role="collapsible" data-theme="b" id="wCity" data-collapsed-icon="info">
-            <h3>Build a city</h3>
-            <img src="toy3.png" height="500" width="500" alt="wooden city">
-            <p>Get your future civil engineer started with city playset. Teach your child to indentify common objects found around your neighborhood</p>
-          </div>
-
-
-            <div data-role="collapsible" data-theme="b" id="wAppl" data-collapsed-icon="info">
-            <h3>Kitchen Play Set</h3>
-            <img src="toy4.jpg" height="500" width="500" alt="wooden appiances">
-            <p>Cooking is a vital skill that each child should learn so why not introduce kitchen appliances in a fun way.</p>
-          </div>
-
-
-            <div data-role="collapsible" data-theme="b" id="alphabet" data-collapsed-icon="info">
-            <h3>Make words and numbers</h3>
-            <img src="toy5.jpg" height="500" width="500" alt="alphabet">
-            <p>Keep it simple with wooden blocks to spell out words and learn numbers.</p>
-          </div>
-                    </div>
-
-        </div>
-
-        <div data-role="header" data-position="fixed">
-
-        <div data-role="navbar" data-grid="c">
-        <ul>
-            <li><a href="#homepage" id="home2" data-transition="none" data-icon="custom"></a></li>
-            <li><a href="#toysPage" class="ui-btn-active ui-state-persist" id="toys2" data-transition="none" data-icon="custom"></a></li>
-            <li><a href="#locationPage" id="location2" data-transition="none" data-icon="custom"></a></li>
-            <li><a href="#contactPage" id="contact2" data-transition="none" data-icon="custom"></a></li>
-
-        </ul>        	
-        </div>
-    </div>
-
-    </div>
-
-    <!-- This is the location page -->
-    <div id="locationPage" data-role="page">
-    	<header data-role="footer" data-position="fixed">
-    		<h2>Location</h2>
-    	</header>
-    	<div data-role="content">
-    		<p>123 Sesame St, Manhattan New York<br><br> located right next door to Oscar's trash can and Big Bird's nest.</p>
-
-    	</div>
-
-        <div data-role="header" data-position="fixed">
-
-        <div data-role="navbar" data-grid="c">
-        <ul>
-            <li><a href="#homepage" id="home3" data-transition="none" data-icon="custom"></a></li>
-            <li><a href="#toysPage" id="toys3" data-transition="none" data-icon="custom"></a></li>
-            <li><a href="#locationPage" id="location3" class="ui-btn-active ui-state-persist" data-transition="none" data-icon="custom"></a></li>
-            <li><a href="#contactPage" id="contact3" data-transition="none" data-icon="custom"></a></li>
-
-        </ul>        	
-        </div>
-
-    </div>
-    
-    </div>
-
-    <!-- This is the contact us page -->
-     <div id="contactPage" data-role="page">
-    	<header data-role="footer" data-position="fixed">
-    		<h2>Contact Us</h2>
-    	</header>
-
-
-        <div data-role="content">
-
-        <h3>Feel Free to contact us!</h3>
-        
-         <p>
-        	<b>Address:</b>
-        	<br>
-        	123 Sesame St
-        	<br>
-        	Manhattan, NY 10037
-        </p>
-        
-        <p>
-        	<b>Phone:</b> 555 555 5555
-        </p>
-
-        <p>
-        	<b>Email:</b> abc@toys.com
-        </p>
-
-        <p>
-        	<b>Facebook Page:</b>
-        	<br>
-        	<a href="#">www.facebook.com/ABCtoys</a>
-        </p>
-
-
-        <form method="get" action="#">
-            <fieldset class="ui-field-contain">
-    		    <label for="name">Name:</label>
-			    <input type="text" name="name" id="name" value="" placeholder="Your Name"/>
-			    <label for="email">Email: </label>
-			    <input type="email" name="email" id="email" value="" placeholder="Your Email"/>
-
-            </fieldset>
-            <div class="ui-field-contain">
-			    <label for="comments">Leave a comment!</label>
-            	<textarea id="comments"></textarea>
-            </div>
-
-            <input data-inline="true" data-theme="b" type="submit" value="Submit">
-
-
-        </form>
-
-
-
-
-        </div>
-
-        <div data-role="header" data-position="fixed">
-
-        <div data-role="navbar" data-grid="c">
-        <ul>
-            <li><a href="#homepage" id="home4" data-transition="none" data-icon="custom"></a></li>
-            <li><a href="#toysPage" id="toys4" data-transition="none" data-icon="custom"></a></li>
-            <li><a href="#locationPage" id="location4" data-transition="none" data-icon="custom"></a></li>
-            <li><a href="#contactPage" id="contact4" class="ui-btn-active ui-state-persist" data-transition="none" data-icon="custom"></a></li>
-
-        </ul>        	
-        </div>
-    
-    </div>
-</div>
-</body>
+	</body>
 </html>
+
