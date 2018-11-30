@@ -22,7 +22,7 @@ body{
 
 
 a:link {
-    color:#c5cdd2;
+    color:#f2faff;
     
 }
 a:active {
@@ -50,8 +50,8 @@ a:active {
 
 .aboutMe{
 	/*#660033*/
-	/*e37130*/
-	background-color:#f2faff;
+	/*#c5cdd2*/
+	background-color:#c5cdd2;
 	color:white;
 	margin:10px;
 	padding:50px;
