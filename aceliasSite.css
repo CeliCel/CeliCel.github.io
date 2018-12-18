@@ -1,0 +1,63 @@
+body {
+	/*background-image:url("circuit.png");*/
+	/*background-position:left;*/
+	/*background-repeat:no-repeat;*/
+	margin:75px;
+	text-align: justify;
+	font-size:20px;
+	font-family: 'News Cycle', sans-serif;
+	line-height: 1.5;
+  	display: inline-block;
+  	vertical-align: middle;
+}
+
+
+.container-fluid{
+	/*margin-top:100px;*/
+	
+	background:#ffe6b3;
+
+	
+}
+
+.col-sm-6{
+	/*float:left;*/
+	margin-left:75px;
+	/*padding-left: 60px;*/
+}
+.col-sm-4{
+	/*float:left;*/
+	margin-left:35px;
+	/*padding-left: 60px;*/
+}
+
+
+
+img{
+	margin-top:25px;
+	
+}
+
+a{
+	color:#cc3300;
+}
+a:hover{
+	color:#ff794d;
+}
+
+
+p{
+	font-size:medium;
+}
+
+h1{
+	/*float:left;*/
+	color:#A23419;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+h2{
+	/*float:left;*/
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+}
