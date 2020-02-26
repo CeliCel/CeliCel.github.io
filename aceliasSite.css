@@ -13,9 +13,9 @@ body {
 
 
 .container-fluid{
-	/*margin-top:100px;*/
+	/*margin-top:100px; #dfbf9f */
 	
-	background:#ffe6b3;
+	background:#dfbf9f;
 
 	
 }
@@ -39,7 +39,7 @@ img{
 }
 
 a{
-	color:#cc3300;
+	color:#996633;
 }
 a:hover{
 	color:#ff794d;
@@ -52,7 +52,7 @@ p{
 
 h1{
 	/*float:left;*/
-	color:#A23419;
+	color:#5c8a8a;
 	font-family: 'Fjalla One', sans-serif;
 }
 
